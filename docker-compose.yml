@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-website
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    environment:
+      - NODE_ENV=production
+      - PORTFOLIO_OWNER_ADDRESS=${PORTFOLIO_OWNER_ADDRESS}
+      - CONTRACT_ADDRESS=${CONTRACT_ADDRESS}
+    volumes:
+      - ./src:/app/src:ro
+      - ./index.html:/app/index.html:ro
+      - ./public:/app/public:ro
+    restart: unless-stopped
+    networks:
+      - portfolio-network
+    labels:
+      - "com.portfolio.description=Portfolio Website"
+      - "com.portfolio.version=1.0"
+
+  nginx:
+    image: nginx:alpine
+    container_name: portfolio-reverse-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - portfolio
+    networks:
+      - portfolio-network
+    restart: unless-stopped
+
+networks:
+  portfolio-network:
+    driver: bridge
+
+volumes:
+  portfolio-data:
+    driver: local

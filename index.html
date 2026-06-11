@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Showcase of projects and skills">
+    <title>My Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Writing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="signature-name">Mian Muhammad Owais</span></h1>
+            <p class="hero-subtitle">Full-Stack Developer (MERN) | Web3 & Smart Contract Developer | Emerging Researcher exploring Decentralized Systems and Blockchain. </p>
+            <p class="hero-description">Building amazing digital experiences with modern web technologies</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#contact')">Get In Touch</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#projects')">View My Work</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-placeholder">
+                <img src="./public/images/profilee.png" alt="Mian Muhammad Owais profile photo" class="profile-photo" onerror="this.style.display='none'">
+                <svg class="profile-fallback" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="100" cy="100" r="100" fill="#C9A84C" opacity="0.1"/>
+                    <circle cx="100" cy="80" r="40" fill="#C9A84C"/>
+                    <ellipse cx="100" cy="150" rx="50" ry="40" fill="#C9A84C"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer with expertise in building web-2 and Web-3 applications and writing Smart Contracts. With experience in modern web frameworks and full-stack development, I create innovative solutions that solve real-world problems.</p>
+                    <p>Currently focused on developing high-quality web applications and Ressearch new technologies to deliver robust digital experiences.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="./public/images/aboutt.png" alt="Mian Muhammad Owais portrait" class="about-photo" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-actions">
+                <button type="button" class="add-item-btn" data-section="projects">+ Add Project</button>
+            </div>
+            <div class="projects-grid projects-scroll" id="projectsList" aria-label="Projects horizontal scroll">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/images/projects/shutter-speed-BQ9usyzHx_w-unsplash.jpg" alt="E-Commerce Platform project preview" class="project-image-file" onerror="this.style.display='none'">
+                        <div class="project-placeholder"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce platform with payment integration and inventory management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/images/projects/20945991.jpg" alt="Social Dashboard project preview" class="project-image-file" onerror="this.style.display='none'">
+                        <div class="project-placeholder">WEB</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blockchain Base Supply Chain Management</h3>
+                        <p>I built a blockchain-powered supply chain management system. This project was a great experience because it allowed me to turn my theoretical knowledge into a real-world application. I learned firsthand how blockchain creates a trustless platform—enabling immutability, transparent ownership transfer via smart contracts, and secure wallet integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Solidity Smart Contract</span>
+                            <span class="tech-tag">Hardhat Wallet</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7457145385602519040/" class="project-link">Live Demo</a>
+                            <a href="https://github.com/mian-owais/Supply-Chain-Management-System-" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-actions">
+                <button type="button" class="add-item-btn" data-section="skills">+ Add Skill Category</button>
+            </div>
+            <div class="skills-grid skills-scroll" id="skillsList" aria-label="Skills horizontal scroll">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js / Express.js</li>
+                        <li>Django</li>
+                        <li>RESTful APIs</li>
+                        <li>SQL (PostgreSQL) / NoSQL (Mongo) Databases</li>
+                        <li>Server Development</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Blockchain Technology</h3>
+                    <ul class="skill-list">
+                        <li>Smart Contract</li>
+                        <li>DApp Developments</li>
+                        <li>Hardhat</li>
+                        <li>Language :  Solidity</li>
+                        <li>Metamask Wallet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="education-level">School</div>
+                    <h3>The School of Wisdom</h3>
+                    <p>Matriculation / Secondary Education</p>
+                    <p class="education-meta">Year: 2016 - 2020</p>
+                    <p class="education-meta">City: Kohat</p>
+                </article>
+                <article class="education-card">
+                    <div class="education-level">College</div>
+                    <h3>Oxford Group of Collages</h3>
+                    <p>Intermediate / Higher Secondary</p>
+                    <p class="education-meta">Year: 2020 - 2022</p>
+                    <p class="education-meta">City: Kohat</p>
+                </article>
+                <article class="education-card">
+                    <div class="education-level">University</div>
+                    <h3>Ghulam Ishaq Khan Institute ( GIKI )</h3>
+                    <p>Bachelor's Degree in Software Engineering</p>
+                    <p class="education-meta">Year: 2023 - Present</p>
+                    <p class="education-meta">CGPA: X.XX / 4.00</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="section-actions">
+                <button type="button" class="add-item-btn" data-section="certificates">+ Add Certificate</button>
+            </div>
+            <div class="credentials-grid certificates-scroll" id="certificatesList" aria-label="Certificates horizontal scroll">
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/1.PNG" alt="Coursera certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload1" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload1" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2025 • Coursera</div>
+                    <h3>Blockchain Basics</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/C1XIPOC46UMG" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Coursera</a>
+                </article>
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/2.PNG" alt="Google certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload2" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload2" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2025 • Coursera</div>
+                    <h3>Blockchain Platforms</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8O003LLENQGC" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Coursera</a>
+                </article>
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/3.PNG" alt="Meta certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload3" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload3" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2025 • Coursera</div>
+                    <h3>Smart Contracts</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/5BUW19FGQFEQ" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Coursera</a>
+                </article>
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/4.PNG" alt="Udemy certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload4" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload4" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2025 • Coursera</div>
+                    <h3>Decentralize Applications (DApp)</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/71YQ2A2YJ345" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Coursera</a>
+                </article>
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/Capture 1.PNG" alt="IBM certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload5" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload5" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2026 • Udemy</div>
+                    <h3>Full Stack Development</h3>
+                    <a href="https://www.udemy.com/certificate/UC-d4bebaee-c950-4712-a66e-e27ae63f3a14/" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Udemy</a>
+                </article>
+                <article class="credential-card certificate-card">
+                    <div class="certificate-preview">
+                        <img src="./public/images/certificates/Capture 2.PNG" alt="AWS certificate preview" class="certificate-image" onerror="this.style.display='none'">
+                        <div class="certificate-fallback">Certificate Image</div>
+                    </div>
+                    <div class="certificate-upload">
+                        <label for="certificateUpload6" class="upload-button">Upload Image</label>
+                        <input type="file" id="certificateUpload6" class="certificate-upload-input" accept="image/*">
+                    </div>
+                    <div class="credential-meta">2025 • Coursera</div>
+                    <h3>Introduction to Machine Learning</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/U5S3XHUGOC2S" target="_blank" rel="noopener noreferrer" class="issuer-button">View on Coursera</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-actions">
+                <button type="button" class="add-item-btn" data-section="experience">+ Add Experience</button>
+            </div>
+            <div class="timeline-list experience-scroll" id="experienceList" aria-label="Experience list vertical scroll">
+                <article class="timeline-item">
+                    <div class="timeline-period">Mar 2026 - Apr 2026</div>
+                    <h3>Full Stack Developer Intern</h3>
+                    <h4>Apexcify Technologys</h4>
+                    <p>I have completed my Full Stack Development Internship at Apexcify Technologys , where I worked on developing dynamic web applications and strengthened my skills in modern web technologies.</p>
+                    <a href="https://www.linkedin.com/company/apexcifytechnologys/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="resource-link">View Internship Link</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Writing Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Writing</h2>
+            <div class="credentials-grid">
+                <article class="credential-card">
+                    <div class="credential-meta">Bibliography</div>
+                    <h3>Technical Bibliography Collection</h3>
+                    <p>Add your bibliography link for references and related reading resources.</p>
+                    <a href="https://github.com/mian-owais/Bibliography-Writting" target="_blank" rel="noopener noreferrer" class="resource-link">View Repository</a>
+                </article>
+                <article class="credential-card">
+                    <div class="credential-meta">Survey Paper</div>
+                    <h3>Survey on Federated AI Marketplaces</h3>
+                    <p>Paste your survey paper repository or professional profile link here.</p>
+                    <a href="https://github.com/mian-owais/Literature-Review" target="_blank" rel="noopener noreferrer" class="resource-link">View Repository</a>
+                </article>
+                <article class="credential-card">
+                    <div class="credential-meta">Feasibility Report</div>
+                    <h3>Feasibility Analysis Next-Generation Liquid Staking Derivative Protocol</h3>
+                    <p>Share your feasibility report work through a public repository link.</p>
+                    <a href="https://github.com/mian-owais/Feasibility-Report" target="_blank" rel="noopener noreferrer" class="resource-link">View Repository</a>
+                </article>
+                <article class="credential-card">
+                    <div class="credential-meta">Research Paper</div>
+                    <h3>Future Research Work on Blockchain</h3>
+                    <p>Not Yet</p>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="resource-link">View Repository</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mianowais980@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Watsap Phone</h3>
+                            <p>+92 (349) 8977120</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Kohat, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/mianowais980@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio contact request">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_replyto" value="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Building amazing Web-3 && Web-2 digital experiences with modern web technologies</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#publications">Writing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://github.com/mian-owais">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/mian-muhammad-owais/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p>Last Updated: <span id="lastUpdate"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

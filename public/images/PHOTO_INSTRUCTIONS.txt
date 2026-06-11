@@ -1,0 +1,10 @@
+Place your photos in this folder with these names:
+
+- profile-hero.jpg  (used in the top hero circle)
+- profile-about.jpg (used in the About section image box)
+
+Recommended minimum size:
+- profile-hero.jpg: 800x800 (square)
+- profile-about.jpg: 900x1100 (portrait or square)
+
+You can also use .png files by updating paths in index.html.

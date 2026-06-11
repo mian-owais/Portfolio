@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Professional portfolio website showcasing web development expertise with modern technologies",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node scripts/start-server.js",
+    "serve": "node scripts/start-server.js --no-open",
+    "build": "echo 'Building portfolio...'",
+    "deploy": "npm run build",
+    "test": "echo 'Running tests...'",
+    "lint": "eslint src/js/",
+    "prettier": "prettier --write 'src/**/*.{js,css,html}'",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "html",
+    "css",
+    "javascript",
+    "responsive-design",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio.git"
+  },
+  "homepage": "https://yourusername.github.io/portfolio"
+}
