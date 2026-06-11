@@ -1,22 +1,7 @@
-// Vercel deployment configuration
-// This file configures how the portfolio is deployed on Vercel
-
 {
+  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": ".",
-  "framework": "html",
-  "env": [
-    {
-      "key": "PORTFOLIO_OWNER_ADDRESS",
-      "description": "Your Ethereum wallet address",
-      "value": ""
-    },
-    {
-      "key": "CONTRACT_ADDRESS",
-      "description": "Deployed contract address",
-      "value": ""
-    }
-  ],
   "redirects": [
     {
       "source": "/old-portfolio",
