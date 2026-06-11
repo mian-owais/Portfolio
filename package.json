@@ -9,8 +9,6 @@
     "build": "echo 'Building portfolio...'",
     "deploy": "npm run build",
     "test": "echo 'Running tests...'",
-    "lint": "eslint src/js/",
-    "prettier": "prettier --write 'src/**/*.{js,css,html}'",
     "start": "npm run dev"
   },
   "keywords": [
